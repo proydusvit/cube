@@ -2,49 +2,21 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8" />
-  <title>Розмальовка</title>
+  <title>Збирач бонусів</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<h1>Розфарбуй будиночок!</h1>
+  <h1>Збирач бонусів</h1>
+  <p>Керуй за допомогою стрілок і збирай бонуси!</p>
+  <p>Зібрано: <span id="score">0</span></p>
 
-  <div class="color-buttons">
-    <div class="color-btn" style="background: red;" data-color="red"></div>
-    <div class="color-btn" style="background: blue;" data-color="blue"></div>
-    <div class="color-btn" style="background: yellow;" data-color="yellow"></div>
-    <div class="color-btn" style="background: green;" data-color="green"></div>
-    <div class="color-btn" style="background: orange;" data-color="orange"></div>
+  <div id="game">
+    <div id="player">
+      <img src="/ваше фото.webp" alt="" width="35px" height="35px">
+    </div>
+    <div id="bonus"></div>
   </div>
 
-  <svg id="house" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" >
-
-    <!-- Дім -->
-    <rect class="part" id="house-body" x="50" y="90" width="100" height="80" fill="#ffffff" stroke="#000" stroke-width="2" />
-
-    <!-- Дах -->
-    <polygon class="part" id="roof" points="40,90 160,90 100,40" fill="#c1440e" stroke="#000" stroke-width="2" />
-
-    <!-- Двері -->
-    <rect class="part" id="door" x="90" y="140" width="20" height="30" fill="#774400" stroke="#000" stroke-width="2" />
-    <circle class="part" id="doorknob" cx="105" cy="155" r="3" fill="#000" />
-
-    <!-- Вікна -->
-    <rect class="part" id="window-left" x="60" y="110" width="25" height="25" fill="#87ceeb" stroke="#000" stroke-width="2" />
-    <rect class="part" id="window-right" x="115" y="110" width="25" height="25" fill="#87ceeb" stroke="#000" stroke-width="2" />
-
-    <!-- Труба -->
-    <rect class="part" id="chimney" x="140" y="50" width="15" height="30" fill="#666" stroke="#000" stroke-width="2" />
-
-    <!-- Сонце -->
-    <circle class="part" id="sun" cx="30" cy="30" r="20" fill="yellow" stroke="#daa520" stroke-width="2" />
-
-    <!-- Хмарка -->
-    <ellipse class="part" id="cloud1" cx="170" cy="40" rx="25" ry="15" fill="#ddd" stroke="#bbb" stroke-width="2" />
-    <ellipse class="part" id="cloud2" cx="140" cy="40" rx="20" ry="13" fill="#ddd" stroke="#bbb" stroke-width="2" />
-    <ellipse class="part" id="cloud3" cx="155" cy="25" rx="20" ry="15" fill="#ddd" stroke="#bbb" stroke-width="2" />
-
-  </svg>
-  
   <script src="script.js"></script>
 </body>
 </html>
